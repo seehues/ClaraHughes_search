@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Clara Hughes - form search box</title>
+	
+	
+<style type="text/css">
+body {
+  text-align: center;
+  padding-top: 4em;
+}
+label {
+  position: relative;
+  width: 150px;
+  height: 100%;
+  font-family: serif;
+  font-style: italic;
+  color: #155e5e;
+}
+input::placeholder {
+  font-family: serif;
+  font-style: italic;
+  color: #155e5e;
+}
+label:before {
+  content: "";
+  position: absolute;
+  /*left: 10px;*/
+  top: 0;
+  bottom: 0;
+  width: 34px;
+}
+label:hover:before {
+  content: "";
+  position: absolute;
+  /*left: 10px;*/
+  top: 0;
+  bottom: 0;
+  width: 34px;
+}
+.search-form :before {
+  color: #999;
+  right: 0px;
+  border-radius: 0 25px 25px 0;
+  background-image: url(img/search.svg);
+  background-size: 33px 30px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  display:inline-block;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+.search-form :hover :before {
+  right: 0px;
+  border-radius: 0 25px 25px 0;
+  background-image: url(img/search-white.svg);
+  background-size: 33px 30px;
+  background-color: #155e5e;
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  display:inline-block;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+.search-text input {
+  font-size: 16px;
+  padding-left: 10px;
+  border: 1px solid #e3e3e3;
+  height: auto;
+  border-radius: 25px;
+  width: 150px;
+  height: 36px;
+  font-family: serif;
+  font-style: italic;
+  color: #155e5e;
+}	
+</style>
+	
+</head>
+
+<body>
+	
+	<form class="search-form">
+      <div class="search-text">
+		  <label>
+            <input type="text" placeholder="Search" style="font-family: sans-serif; font-style: normal; color: #000000;" onfocus="this.value=''; this.style.color='#000000'">
+          </label>
+      </div>
+	</form>
+	
+</body>
+</html>
